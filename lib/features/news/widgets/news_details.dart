@@ -5,7 +5,6 @@ import 'package:stake_lounge/features/news/widgets/news_content.dart';
 import 'package:stake_lounge/features/news/widgets/news_image.dart';
 import 'package:stake_lounge/features/news/widgets/news_title.dart';
 import 'package:stake_lounge/shared/widgets/custom_container.dart';
-import 'package:stake_lounge/shared/widgets/custom_container_top.dart';
 
 class NewsDetails extends StatelessWidget {
   const NewsDetails({

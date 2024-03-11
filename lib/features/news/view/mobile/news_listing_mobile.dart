@@ -15,7 +15,7 @@ class NewsListingMobile extends StatelessWidget {
       itemCount: newsList.length + 2,
       itemBuilder: (context, index) {
         if (index == 0 || index == newsList.length + 1) {
-          return SizedBox.shrink();
+          return const SizedBox.shrink();
         } else {
           final news = newsList[index - 1];
           return CupertinoButton(

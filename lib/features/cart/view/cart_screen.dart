@@ -1,7 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/hive/box.dart';
@@ -11,7 +9,6 @@ import 'package:stake_lounge/features/cart/widgets/empty_cart_placeholder.dart';
 import 'package:stake_lounge/router/router.dart';
 import 'package:stake_lounge/shared/widgets/custom_button.dart';
 import 'package:stake_lounge/shared/widgets/custom_app_bar.dart';
-import 'package:stake_lounge/shared/widgets/custom_container.dart';
 import 'package:stake_lounge/shared/widgets/custom_container_bottom.dart';
 import 'package:stake_lounge/shared/func/price_to_string.dart';
 

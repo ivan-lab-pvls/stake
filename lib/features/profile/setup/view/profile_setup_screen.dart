@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:auto_route/auto_route.dart';
@@ -21,14 +20,14 @@ final profilePictureController = ProfilePictureController();
 @RoutePage()
 class ProfileSetupScreen extends StatelessWidget {
   final String? name;
-  final Uint8List? imageFile;
+  final Uint8List? image;
 
-  const ProfileSetupScreen({super.key, this.name, this.imageFile});
+  const ProfileSetupScreen({super.key, this.name, this.image});
 
   @override
   Widget build(BuildContext context) {
     nameController.text = name ?? '';
-    profilePictureController.updateProfilePicture(imageFile);
+    profilePictureController.updateProfilePicture(image);
 
     return Scaffold(
       appBar: AppBar(

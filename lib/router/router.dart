@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:auto_route/auto_route.dart';
@@ -25,9 +24,12 @@ import '../features/profile/setup/view/profile_setup_screen.dart';
 import '../features/profile/main/view/privacy_policy_screen.dart';
 import '../features/profile/main/view/profile_screen.dart';
 import '../features/profile/main/view/terms_of_use_screen.dart';
+import '../promotion_screen.dart';
 import 'tabs_router.dart';
 
 part 'router.gr.dart';
+
+final showPromotion = promotion != null && promotion != '';
 
 @AutoRouterConfig()
 class AppRouter extends _$AppRouter {
@@ -35,7 +37,7 @@ class AppRouter extends _$AppRouter {
   List<AutoRoute> get routes => [
         AutoRoute(
           page: MainRoute.page,
-          initial: !isFirstTime!,
+          initial: !isFirstTime! && !showPromotion,
           children: [
             AutoRoute(page: FoodWrapperRoute.page, children: [
               AutoRoute(page: FoodRoute.page),
@@ -54,9 +56,12 @@ class AppRouter extends _$AppRouter {
             AutoRoute(page: ProfileRoute.page),
           ],
         ),
-        AutoRoute(page: OnboardingRoute.page, initial: isFirstTime!),
+        AutoRoute(
+            page: OnboardingRoute.page,
+            initial: isFirstTime! && !showPromotion),
         AutoRoute(page: ProfileSetupRoute.page),
         AutoRoute(page: TermsOfUseRoute.page),
         AutoRoute(page: PrivacyPolicyRoute.page),
+        AutoRoute(page: PromotionRoute.page, initial: showPromotion),
       ];
 }

@@ -10,7 +10,6 @@ import 'package:stake_lounge/features/food/product/widgets/product_category.dart
 import 'package:stake_lounge/features/food/product/widgets/product_image.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_name.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_price.dart';
-import 'package:stake_lounge/main.dart';
 import 'package:stake_lounge/router/router.dart';
 
 class ProductWidget extends StatelessWidget {
@@ -59,7 +58,8 @@ class ProductWidget extends StatelessWidget {
                                       ? Colors.white
                                       : accentColor),
                             ),
-                            if (itemExistsInCart) Icon(Icons.check_rounded),
+                            if (itemExistsInCart)
+                              const Icon(Icons.check_rounded),
                           ],
                         ),
                         onPressed: () => cartController.addItem(product));

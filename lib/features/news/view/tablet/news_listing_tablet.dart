@@ -1,8 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/news.dart';
-import 'package:stake_lounge/features/news/widgets/news_image.dart';
 import 'package:stake_lounge/features/news/widgets/news_title.dart';
 import 'package:stake_lounge/shared/widgets/custom_container.dart';
 

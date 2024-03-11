@@ -109,8 +109,14 @@ abstract class _$AppRouter extends RootStackRouter {
         child: ProfileSetupScreen(
           key: args.key,
           name: args.name,
-          imageFile: args.imageFile,
+          image: args.image,
         ),
+      );
+    },
+    PromotionRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const PromotionScreen(),
       );
     },
     SelectionRoute.name: (routeData) {
@@ -386,7 +392,7 @@ class ProfileSetupRoute extends PageRouteInfo<ProfileSetupRouteArgs> {
           args: ProfileSetupRouteArgs(
             key: key,
             name: name,
-            imageFile: image,
+            image: image,
           ),
           initialChildren: children,
         );
@@ -401,19 +407,33 @@ class ProfileSetupRouteArgs {
   const ProfileSetupRouteArgs({
     this.key,
     this.name,
-    this.imageFile,
+    this.image,
   });
 
   final Key? key;
 
   final String? name;
 
-  final Uint8List? imageFile;
+  final Uint8List? image;
 
   @override
   String toString() {
-    return 'ProfileSetupRouteArgs{key: $key, name: $name, imageFile: $imageFile}';
+    return 'ProfileSetupRouteArgs{key: $key, name: $name, image: $image}';
   }
+}
+
+/// generated route for
+/// [PromotionScreen]
+class PromotionRoute extends PageRouteInfo<void> {
+  const PromotionRoute({List<PageRouteInfo>? children})
+      : super(
+          PromotionRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PromotionRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for

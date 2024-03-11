@@ -15,6 +15,7 @@ import 'package:stake_lounge/router/router.dart';
 bool? isFirstTime;
 String? privacyPolicy;
 String? termsOfUse;
+String? promotion;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +39,7 @@ Future<void> main() async {
 
   privacyPolicy = remoteConfig.getString("privacy_policy");
   termsOfUse = remoteConfig.getString("terms_of_use");
+  promotion = remoteConfig.getString("promotion");
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitDown,

@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:stake_lounge/const.dart';
 
 class CustomButton extends StatelessWidget {
@@ -26,7 +25,7 @@ class CustomButton extends StatelessWidget {
         children: [
           Expanded(
             child: CupertinoButton(
-              borderRadius: BorderRadius.all(radius),
+              borderRadius: const BorderRadius.all(radius),
               color: color,
               onPressed: onPressed == null ? null : () => onPressed!(1),
               child: Text(

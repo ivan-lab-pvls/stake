@@ -33,7 +33,7 @@ class ProfileScreen extends StatelessWidget {
                       GetBuilder(
                         init: profileController,
                         builder: (_) {
-                          return ProfilePictureAndNameWidget();
+                          return const ProfilePictureAndNameWidget();
                         },
                       ),
                       whiteSpace,

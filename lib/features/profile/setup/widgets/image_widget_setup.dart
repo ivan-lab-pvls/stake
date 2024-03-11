@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:auto_route/auto_route.dart';
@@ -39,7 +38,7 @@ class ImageWidgetSetup extends StatelessWidget {
                 ),
               )
             : ClipRRect(
-                borderRadius: BorderRadius.all(radius),
+                borderRadius: const BorderRadius.all(radius),
                 child: Image.memory(
                   image!,
                   width: 114,

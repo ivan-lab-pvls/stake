@@ -22,6 +22,7 @@ class AppSearchDelegate extends SearchDelegate {
             icon: const Icon(Icons.clear_rounded))
       ];
     }
+    return null;
   }
 
   @override
