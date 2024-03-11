@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:stake_lounge/const.dart';
-import 'package:stake_lounge/features/news/news_master_container.dart';
+import 'package:stake_lounge/features/news/view/news_master_container.dart';
 
 @RoutePage()
 class NewsScreen extends StatelessWidget {

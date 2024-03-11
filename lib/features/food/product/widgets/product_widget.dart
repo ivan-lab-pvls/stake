@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/hive/box.dart';
 import 'package:stake_lounge/data/product.dart';
-import 'package:stake_lounge/features/cart/cart_screen.dart';
+import 'package:stake_lounge/features/cart/view/cart_screen.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_category.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_image.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_name.dart';

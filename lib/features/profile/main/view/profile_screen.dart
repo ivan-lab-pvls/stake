@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/features/profile/main/widgets/name_picture_edit_widget.dart';
 import 'package:stake_lounge/features/profile/main/widgets/settings_section.dart';
-import 'package:stake_lounge/shared/custom_app_bar.dart';
+import 'package:stake_lounge/shared/widgets/custom_app_bar.dart';
 
 final profileController = ProfileController();
 

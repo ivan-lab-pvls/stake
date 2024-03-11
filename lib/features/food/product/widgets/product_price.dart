@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/product.dart';
-import 'package:stake_lounge/shared/price_to_string.dart';
+import 'package:stake_lounge/shared/func/price_to_string.dart';
 
 class ProductPrice extends StatelessWidget {
   final double? fontSize;

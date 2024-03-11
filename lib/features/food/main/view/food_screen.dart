@@ -5,8 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/features/food/selection/selection.dart';
 import 'package:stake_lounge/features/food/main/search.dart';
-import 'package:stake_lounge/features/food/category/category_list_widget.dart';
-import 'package:stake_lounge/features/food/selection/selection_widget.dart';
+import 'package:stake_lounge/features/food/category/view/category_list_widget.dart';
+import 'package:stake_lounge/features/food/selection/widgets/selection_widget.dart';
 
 @RoutePage()
 class FoodScreen extends StatelessWidget {

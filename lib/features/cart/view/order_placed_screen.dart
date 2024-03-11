@@ -1,13 +1,13 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:stake_lounge/features/cart/cart_screen.dart';
+import 'package:stake_lounge/features/cart/view/cart_screen.dart';
 import 'package:stake_lounge/router/router.dart';
-import 'package:stake_lounge/shared/custom_button.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_button.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
-import '../../const.dart';
-import '../../shared/custom_app_bar.dart';
+import '../../../const.dart';
+import '../../../shared/widgets/custom_app_bar.dart';
 
 @RoutePage()
 class OrderPlacedScreen extends StatelessWidget {

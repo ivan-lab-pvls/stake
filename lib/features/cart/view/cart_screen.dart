@@ -9,11 +9,11 @@ import 'package:stake_lounge/data/product.dart';
 import 'package:stake_lounge/features/cart/widgets/cart_item_widget.dart';
 import 'package:stake_lounge/features/cart/widgets/empty_cart_placeholder.dart';
 import 'package:stake_lounge/router/router.dart';
-import 'package:stake_lounge/shared/custom_button.dart';
-import 'package:stake_lounge/shared/custom_app_bar.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
-import 'package:stake_lounge/shared/custom_container_bottom.dart';
-import 'package:stake_lounge/shared/price_to_string.dart';
+import 'package:stake_lounge/shared/widgets/custom_button.dart';
+import 'package:stake_lounge/shared/widgets/custom_app_bar.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container_bottom.dart';
+import 'package:stake_lounge/shared/func/price_to_string.dart';
 
 final cartController = CartController();
 int index = 0;

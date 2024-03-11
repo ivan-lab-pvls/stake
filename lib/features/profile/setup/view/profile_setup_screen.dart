@@ -8,12 +8,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/hive/box.dart';
 import 'package:stake_lounge/data/user.dart';
-import 'package:stake_lounge/features/profile/main/profile_screen.dart';
-import 'package:stake_lounge/shared/custom_button.dart';
+import 'package:stake_lounge/features/profile/main/view/profile_screen.dart';
+import 'package:stake_lounge/shared/widgets/custom_button.dart';
 import 'package:stake_lounge/features/profile/setup/widgets/image_widget_setup.dart';
 import 'package:stake_lounge/features/profile/setup/widgets/name_section.dart';
 import 'package:stake_lounge/router/router.dart';
-import 'package:stake_lounge/shared/custom_container_top.dart';
+import 'package:stake_lounge/shared/widgets/custom_container_top.dart';
 
 final nameController = TextEditingController();
 final profilePictureController = ProfilePictureController();

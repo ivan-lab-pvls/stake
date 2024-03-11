@@ -2,10 +2,10 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/features/onboarding/widgets/bottom_links.dart';
-import 'package:stake_lounge/shared/custom_button.dart';
+import 'package:stake_lounge/shared/widgets/custom_button.dart';
 import 'package:stake_lounge/features/onboarding/widgets/onboarding_page.dart';
 
-import '../../router/router.dart';
+import '../../../router/router.dart';
 
 late PageController pageController;
 int page = 0;

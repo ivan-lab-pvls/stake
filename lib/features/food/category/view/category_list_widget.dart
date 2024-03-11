@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/features/food/category/category.dart';
 import 'package:stake_lounge/router/router.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class CategoryListWidget extends StatelessWidget {
   const CategoryListWidget({

@@ -4,16 +4,16 @@ import 'package:get/get.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/hive/box.dart';
 import 'package:stake_lounge/data/product.dart';
-import 'package:stake_lounge/features/cart/cart_screen.dart';
-import 'package:stake_lounge/features/food/selection/selection_widget.dart';
+import 'package:stake_lounge/features/cart/view/cart_screen.dart';
+import 'package:stake_lounge/features/food/selection/widgets/selection_widget.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_category.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_name.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_price.dart';
-import 'package:stake_lounge/shared/custom_button.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
-import 'package:stake_lounge/shared/custom_container_top.dart';
+import 'package:stake_lounge/shared/widgets/custom_button.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container_top.dart';
 
-import '../selection/selection.dart';
+import '../../selection/selection.dart';
 
 @RoutePage()
 class ProductScreen extends StatelessWidget {

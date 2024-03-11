@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/hive/box.dart';
 import 'package:stake_lounge/router/router.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class ProfilePictureAndNameWidget extends StatelessWidget {
   const ProfilePictureAndNameWidget({

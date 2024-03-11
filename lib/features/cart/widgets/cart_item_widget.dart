@@ -5,7 +5,7 @@ import 'package:stake_lounge/features/food/product/widgets/product_category.dart
 import 'package:stake_lounge/features/food/product/widgets/product_image.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_name.dart';
 import 'package:stake_lounge/features/food/product/widgets/product_price.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class CartItemWidget extends StatelessWidget {
   const CartItemWidget({

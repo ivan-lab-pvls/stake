@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stake_lounge/const.dart';
-import 'package:stake_lounge/features/profile/setup/profile_setup_screen.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/features/profile/setup/view/profile_setup_screen.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class NameSection extends StatelessWidget {
   const NameSection({

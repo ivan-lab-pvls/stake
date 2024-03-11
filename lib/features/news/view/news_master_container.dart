@@ -2,11 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:stake_lounge/data/news.dart';
 import 'package:stake_lounge/features/news/widgets/news_details.dart';
-import 'package:stake_lounge/features/news/mobile/news_listing_mobile.dart';
-import 'package:stake_lounge/features/news/tablet/news_listing_tablet.dart';
-import 'package:stake_lounge/shared/custom_app_bar.dart';
+import 'package:stake_lounge/features/news/view/mobile/news_listing_mobile.dart';
+import 'package:stake_lounge/features/news/view/tablet/news_listing_tablet.dart';
+import 'package:stake_lounge/shared/widgets/custom_app_bar.dart';
 
-import '../../router/router.dart';
+import '../../../router/router.dart';
 
 class NewsMasterContainer extends StatefulWidget {
   const NewsMasterContainer({super.key});

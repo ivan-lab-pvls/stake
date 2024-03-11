@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:stake_lounge/features/profile/main/widgets/settings_item.dart';
 import 'package:stake_lounge/router/router.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 bool ableToCallShareWindow = true;
 

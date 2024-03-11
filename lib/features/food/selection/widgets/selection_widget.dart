@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/features/food/selection/selection.dart';
-import 'package:stake_lounge/features/food/product/product_widget.dart';
-import 'package:stake_lounge/features/food/selection/selection_title_and_button.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/features/food/product/widgets/product_widget.dart';
+import 'package:stake_lounge/features/food/selection/widgets/selection_title_and_button.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class SelectionWidget extends StatelessWidget {
   final Selection selection;

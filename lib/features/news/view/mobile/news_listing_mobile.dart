@@ -3,7 +3,7 @@ import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/news.dart';
 import 'package:stake_lounge/features/news/widgets/news_image.dart';
 import 'package:stake_lounge/features/news/widgets/news_title.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class NewsListingMobile extends StatelessWidget {
   const NewsListingMobile({super.key, required this.itemSelectedCallback});

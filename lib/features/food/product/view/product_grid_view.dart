@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/product.dart';
-import 'package:stake_lounge/features/food/product/product_widget.dart';
-import 'package:stake_lounge/shared/custom_container.dart';
+import 'package:stake_lounge/features/food/product/widgets/product_widget.dart';
+import 'package:stake_lounge/shared/widgets/custom_container.dart';
 
 class ProductGridView extends StatelessWidget {
   const ProductGridView({

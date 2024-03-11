@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/product.dart';
-import 'package:stake_lounge/features/cart/cart_screen.dart';
+import 'package:stake_lounge/features/cart/view/cart_screen.dart';
 
 class CartDeleteButton extends StatelessWidget {
   const CartDeleteButton({

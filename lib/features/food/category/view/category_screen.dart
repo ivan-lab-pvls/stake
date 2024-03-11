@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:stake_lounge/data/product.dart';
 import 'package:stake_lounge/features/food/category/category.dart';
-import 'package:stake_lounge/features/food/product/widgets/product_grid_view.dart';
+import 'package:stake_lounge/features/food/product/view/product_grid_view.dart';
 
 @RoutePage()
 class CategoryScreen extends StatelessWidget {
