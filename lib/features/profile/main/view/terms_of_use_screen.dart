@@ -22,7 +22,7 @@ class TermsOfUseScreen extends StatelessWidget {
                 ),
               )
             : const Center(
-                child: Text('No privacy policy'),
+                child: Text('No terms of use'),
               ),
       ),
     );
