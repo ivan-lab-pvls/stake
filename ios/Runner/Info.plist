@@ -27,11 +27,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>We need access to camera in order to capture profile picture.</string>
+	<string>We need access to camera in order to capture profile picture in app</string>
 	<key>NSFileProviderDomainUsageDescription</key>
-	<string>We need access to files in order to set profile picture.</string>
+	<string>We need access to files in order to set profile picture in app</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We need access to photos in order to set profile picture.</string>
+	<string>We need access to photos in order to set profile picture in app</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
