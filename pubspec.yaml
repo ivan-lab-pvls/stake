@@ -1,0 +1,57 @@
+name: stake_lounge
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  auto_route: ^7.8.4
+  auto_route_generator: ^7.3.2
+  build_runner: ^2.4.8
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.10+1
+  get: ^4.6.6
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  image_picker: ^1.0.7
+  qr_flutter: ^4.1.0
+  share_plus: ^7.2.2
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/categories/
+    - assets/icons/
+    - assets/news/
+    - assets/onboarding/
+    - assets/page_headers/
+    - assets/products/pizza/
+    - assets/products/sushi/
+    - assets/products/pasta/
+    - assets/products/dessert/
+    - assets/products/beverages/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto/Roboto-ThinItalic.ttf
+        - asset: fonts/Roboto/Roboto-Black.ttf
+        - asset: fonts/Roboto/Roboto-BlackItalic.ttf
+        - asset: fonts/Roboto/Roboto-Bold.ttf
+        - asset: fonts/Roboto/Roboto-BoldItalic.ttf
+        - asset: fonts/Roboto/Roboto-Italic.ttf
+        - asset: fonts/Roboto/Roboto-Light.ttf
+        - asset: fonts/Roboto/Roboto-LightItalic.ttf
+        - asset: fonts/Roboto/Roboto-Medium.ttf
+        - asset: fonts/Roboto/Roboto-MediumItalic.ttf
+        - asset: fonts/Roboto/Roboto-Regular.ttf
+        - asset: fonts/Roboto/Roboto-Thin.ttf
