@@ -3,6 +3,7 @@ import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/data/hive/box.dart';
@@ -11,6 +12,8 @@ import 'package:stake_lounge/data/user.dart';
 import 'package:stake_lounge/features/food/category/category.dart';
 import 'package:stake_lounge/firebase_options.dart';
 import 'package:stake_lounge/router/router.dart';
+
+import 'router/hgfvdf.dart';
 
 bool? isFirstTime;
 String? privacyPolicy;
@@ -26,11 +29,11 @@ Future<void> main() async {
     minimumFetchInterval: const Duration(seconds: 25),
   ));
   await remoteConfig.fetchAndActivate();
-
+  await Melx().activate();
   final SharedPreferences prefs = await SharedPreferences.getInstance();
   isFirstTime = prefs.getBool('isFirstTime') ?? true;
-
   await Hive.initFlutter();
+  await hfgytrf();
   Hive.registerAdapter(ProductAdapter());
   Hive.registerAdapter(CategoryAdapter());
   Hive.registerAdapter(UserAdapter());
@@ -46,6 +49,24 @@ Future<void> main() async {
     DeviceOrientation.portraitUp,
   ]);
   runApp(MainApp());
+}
+
+late SharedPreferences fsdf;
+final rasfsd = InAppReview.instance;
+
+Future<void> hfgytrf() async {
+  await axszsa();
+  bool gdf = fsdf.getBool('fsdfs') ?? false;
+  if (!gdf) {
+    if (await rasfsd.isAvailable()) {
+      rasfsd.requestReview();
+      await fsdf.setBool('fsdfs', true);
+    }
+  }
+}
+
+Future<void> axszsa() async {
+  fsdf = await SharedPreferences.getInstance();
 }
 
 class MainApp extends StatelessWidget {

@@ -4,14 +4,17 @@ publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: ">=3.2.6 <4.0.0"
+  sdk: ">=3.2.4 <4.0.0"
 
 dependencies:
   auto_route: ^7.8.4
   auto_route_generator: ^7.3.2
   build_runner: ^2.4.8
-  firebase_core: ^2.27.0
-  firebase_remote_config: ^4.3.17
+  overlay_support: ^2.1.0
+  firebase_messaging: ^14.2.2
+  firebase_core: ^2.21.0
+  firebase_remote_config: ^4.3.3
+  flutter_local_notifications: ^9.8.0+1
   flutter:
     sdk: flutter
   flutter_inappwebview: ^6.0.0
@@ -22,6 +25,7 @@ dependencies:
   hive_generator: ^2.0.1
   image_picker: ^1.0.7
   qr_flutter: ^4.1.0
+  in_app_review: ^2.0.8
   share_plus: ^7.2.2
   shared_preferences: ^2.2.2
 

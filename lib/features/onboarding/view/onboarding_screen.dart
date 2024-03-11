@@ -37,7 +37,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               controller: pageController,
               children: const [
                 OnboardingPage(
-                  title: 'Welcome to our online food store!',
+                  title: 'Welcome to our online ordering app of Stake Lounge Restaurat!',
                   content:
                       'Discover a wide assortment of ready-to-eat dishes and unique delicacies, all available with just a few clicks.',
                   assetPath: 'assets/onboarding/1.png',

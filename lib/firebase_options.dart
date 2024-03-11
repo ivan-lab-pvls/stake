@@ -58,6 +58,6 @@ class App {
     messagingSenderId: '57858131664',
     projectId: 'stake-lounge',
     storageBucket: 'stake-lounge.appspot.com',
-    iosBundleId: 'com.example.stakeLounge',
+    iosBundleId: 'com.lounge.restaurant.app',
   );
 }
