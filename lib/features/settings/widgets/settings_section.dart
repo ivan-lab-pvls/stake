@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:stake_lounge/features/profile/main/widgets/settings_item.dart';
+import 'package:stake_lounge/features/settings/widgets/settings_item.dart';
 import 'package:stake_lounge/router/router.dart';
 import 'package:stake_lounge/shared/widgets/custom_container.dart';
 

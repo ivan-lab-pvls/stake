@@ -22,7 +22,11 @@ class CartItemWidget extends StatelessWidget {
       children: [
         Expanded(
           flex: 2,
-          child: ProductImage(product: cartItem),
+          child: SizedBox(
+            width: MediaQuery.of(context).size.width / 4,
+            height: MediaQuery.of(context).size.width / 6,
+            child: ProductImage(product: cartItem),
+          ),
         ),
         const SizedBox(width: 8),
         Expanded(

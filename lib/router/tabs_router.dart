@@ -15,13 +15,11 @@ class MainScreen extends StatelessWidget {
         FoodRoute(),
         NewsRoute(),
         CartRoute(),
-        ProfileRoute(),
+        SettingsRoute(),
       ],
       bottomNavigationBuilder: (_, tabsRouter) {
         return BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          iconSize: 50,
-          elevation: 50,
           selectedItemColor: accentColor,
           currentIndex: tabsRouter.activeIndex,
           onTap: (value) {
@@ -43,10 +41,16 @@ class MainScreen extends StatelessWidget {
               activeIcon: SvgPicture.asset('assets/icons/cart1.svg'),
               label: 'Cart',
             ),
-            BottomNavigationBarItem(
-              icon: SvgPicture.asset('assets/icons/profile0.svg'),
-              activeIcon: SvgPicture.asset('assets/icons/profile1.svg'),
-              label: 'Profile',
+            const BottomNavigationBarItem(
+              icon: Icon(
+                Icons.settings_rounded,
+                color: Color.fromRGBO(215, 215, 215, 1),
+              ),
+              activeIcon: Icon(
+                Icons.settings_rounded,
+                color: accentColor,
+              ),
+              label: 'Settings',
             ),
           ],
         );
