@@ -101,18 +101,18 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const ProfileScreen(),
       );
     },
-    ProfileSetupRoute.name: (routeData) {
-      final args = routeData.argsAs<ProfileSetupRouteArgs>(
-          orElse: () => const ProfileSetupRouteArgs());
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: ProfileSetupScreen(
-          key: args.key,
-          name: args.name,
-          image: args.image,
-        ),
-      );
-    },
+    // ProfileSetupRoute.name: (routeData) {
+    //   final args = routeData.argsAs<ProfileSetupRouteArgs>(
+    //       orElse: () => const ProfileSetupRouteArgs());
+    //   return AutoRoutePage<dynamic>(
+    //     routeData: routeData,
+    //     child: ProfileSetupScreen(
+    //       key: args.key,
+    //       name: args.name,
+    //       image: args.image,
+    //     ),
+    //   );
+    // },
     PromotionRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
