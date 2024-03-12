@@ -20,10 +20,9 @@ import '../features/news/view/news_wrapper.dart';
 import '../features/news/view/mobile/news_details.dart';
 import '../features/news/view/news_screen.dart';
 import '../features/onboarding/view/onboarding_screen.dart';
-import '../features/profile/setup/view/profile_setup_screen.dart';
-import '../features/profile/main/view/privacy_policy_screen.dart';
-import '../features/profile/main/view/profile_screen.dart';
-import '../features/profile/main/view/terms_of_use_screen.dart';
+import '../features/settings/view/privacy_policy_screen.dart';
+import '../features/settings/view/settings_screen.dart';
+import '../features/settings/view/terms_of_use_screen.dart';
 import '../promotion_screen.dart';
 import 'tabs_router.dart';
 
@@ -53,13 +52,12 @@ class AppRouter extends _$AppRouter {
               AutoRoute(page: CartRoute.page),
               AutoRoute(page: OrderPlacedRoute.page),
             ]),
-            AutoRoute(page: ProfileRoute.page),
+            AutoRoute(page: SettingsRoute.page),
           ],
         ),
         AutoRoute(
             page: OnboardingRoute.page,
             initial: isFirstTime! && !showPromotion),
-        AutoRoute(page: ProfileSetupRoute.page),
         AutoRoute(page: TermsOfUseRoute.page),
         AutoRoute(page: PrivacyPolicyRoute.page),
         AutoRoute(page: PromotionRoute.page, initial: showPromotion),

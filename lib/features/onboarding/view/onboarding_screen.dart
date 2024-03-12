@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:stake_lounge/const.dart';
 import 'package:stake_lounge/features/onboarding/widgets/bottom_links.dart';
 import 'package:stake_lounge/shared/widgets/custom_button.dart';
@@ -37,7 +38,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               controller: pageController,
               children: const [
                 OnboardingPage(
-                  title: 'Welcome to our online ordering app of Stake Lounge Restaurat!',
+                  title:
+                      'Welcome to our online ordering app of Stake Lounge Restaurat!',
                   content:
                       'Discover a wide assortment of ready-to-eat dishes and unique delicacies, all available with just a few clicks.',
                   assetPath: 'assets/onboarding/1.png',
@@ -57,13 +59,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   color: Colors.white,
                   textColor: Colors.black,
                   title: 'Next',
-                  onPressed: (p0) {
+                  onPressed: (p0) async {
                     if (page != 1) {
                       pageController.animateToPage(++page,
                           duration: const Duration(milliseconds: 200),
                           curve: Curves.ease);
                     } else {
-                      context.router.replace(ProfileSetupRoute());
+                      final prefs = await SharedPreferences.getInstance();
+                      await prefs.setBool('isFirstTime', false);
+                      context.router.replace(const MainRoute());
                     }
                   },
                 ),

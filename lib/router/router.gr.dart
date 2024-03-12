@@ -95,24 +95,6 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
-    ProfileRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ProfileScreen(),
-      );
-    },
-    // ProfileSetupRoute.name: (routeData) {
-    //   final args = routeData.argsAs<ProfileSetupRouteArgs>(
-    //       orElse: () => const ProfileSetupRouteArgs());
-    //   return AutoRoutePage<dynamic>(
-    //     routeData: routeData,
-    //     child: ProfileSetupScreen(
-    //       key: args.key,
-    //       name: args.name,
-    //       image: args.image,
-    //     ),
-    //   );
-    // },
     PromotionRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -127,6 +109,12 @@ abstract class _$AppRouter extends RootStackRouter {
           key: args.key,
           selection: args.selection,
         ),
+      );
+    },
+    SettingsRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SettingsScreen(),
       );
     },
     SingleNewsRoute.name: (routeData) {
@@ -366,63 +354,6 @@ class ProductRouteArgs {
 }
 
 /// generated route for
-/// [ProfileScreen]
-class ProfileRoute extends PageRouteInfo<void> {
-  const ProfileRoute({List<PageRouteInfo>? children})
-      : super(
-          ProfileRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ProfileRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [ProfileSetupScreen]
-class ProfileSetupRoute extends PageRouteInfo<ProfileSetupRouteArgs> {
-  ProfileSetupRoute({
-    Key? key,
-    String? name,
-    Uint8List? image,
-    List<PageRouteInfo>? children,
-  }) : super(
-          ProfileSetupRoute.name,
-          args: ProfileSetupRouteArgs(
-            key: key,
-            name: name,
-            image: image,
-          ),
-          initialChildren: children,
-        );
-
-  static const String name = 'ProfileSetupRoute';
-
-  static const PageInfo<ProfileSetupRouteArgs> page =
-      PageInfo<ProfileSetupRouteArgs>(name);
-}
-
-class ProfileSetupRouteArgs {
-  const ProfileSetupRouteArgs({
-    this.key,
-    this.name,
-    this.image,
-  });
-
-  final Key? key;
-
-  final String? name;
-
-  final Uint8List? image;
-
-  @override
-  String toString() {
-    return 'ProfileSetupRouteArgs{key: $key, name: $name, image: $image}';
-  }
-}
-
-/// generated route for
 /// [PromotionScreen]
 class PromotionRoute extends PageRouteInfo<void> {
   const PromotionRoute({List<PageRouteInfo>? children})
@@ -472,6 +403,20 @@ class SelectionRouteArgs {
   String toString() {
     return 'SelectionRouteArgs{key: $key, selection: $selection}';
   }
+}
+
+/// generated route for
+/// [SettingsScreen]
+class SettingsRoute extends PageRouteInfo<void> {
+  const SettingsRoute({List<PageRouteInfo>? children})
+      : super(
+          SettingsRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SettingsRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
